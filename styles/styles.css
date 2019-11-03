@@ -59,6 +59,6 @@ justify-self: center !important;
 .w-150p{
     width:150px;
 }
-.active{
+.navbar .active{
     background-color: var(--success) !important;
 }
