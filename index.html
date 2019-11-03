@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <title>Bootstrap test</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark custom-nav sticky-top">
     <a class="navbar-brand" href="#">
         <img
                 src="https://res.cloudinary.com/teepublic/image/private/s--ewlV277k--/t_Preview/b_rgb:000000,c_limit,f_jpg,h_630,q_90,w_630/v1528758115/production/designs/2778476_0.jpg" width="50" height="50" alt="logo">
@@ -32,7 +32,8 @@
                <a href="#" class="nav-link">Skills</a>
            </li>
            <li class="nav-item">
-               <a href="#" class="nav-link" data-target="#pricingModule">Pricing</a>
+               <!-- Modal toggle -->
+               <a href="#" class="nav-link" data-toggle="modal" data-target="#pricingModal">Pricing</a>
            </li>
            <li class="nav-item">
                <a href="#" class="nav-link">Work</a>
@@ -83,7 +84,8 @@
         <!--</div>-->
 
     <!--</div>-->
- <div class="container-fluid p-0 half d-none">
+
+ <div class="container-fluid p-0 half">
      <div id="MyCarousel" class="carousel slide mySlider border" data-ride="carousel" data-interval="3000">
 
             <!-- Indicators -->
@@ -97,7 +99,7 @@
          <div class="carousel-inner myCarouselInner" role="listbox">
              <div class="carousel-item active">
                  <img
-                         class="d-block w-100"
+                         class="d-block w-100 mh-100"
                          src="images/1.jpg" alt="1">
                  <div
                          class="mySliderItem card card-body carousel-caption align-text-center w-50 h-50 bg-transparent border-0"
@@ -108,7 +110,7 @@
              <div class="carousel-item">
                 <div class="container-fluid d-flex justify-content-center align-items-center">
                     <img
-                            class="d-block w-100"
+                            class="d-block w-100 mh-100"
                             src="images/2.jpg" alt="2">
                     <div
                             class="mySliderItem card card-body carousel-caption align-text-center w-50 h-50 bg-transparent border-0"
@@ -121,7 +123,7 @@
 
              <div class="carousel-item">
                  <img
-                         class="d-block w-100"
+                         class="d-block w-100 mh-100"
                          src="images/3.jpg" alt="3">
                  <div
                          class="mySliderItem card card-body carousel-caption align-text-center w-50 h-50 bg-transparent border-0"
@@ -212,8 +214,29 @@
         </div>
     </div>
 
-<div class="modal fade">
-</div>
+<!-- Modal -->
+<div class="modal fade" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" >
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pricingModalLabel">Pricing</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores delectus dolor doloribus eligendi error id maiores maxime, minima minus necessitatibus nesciunt non possimus praesentium, quam quis sunt! Ab accusamus, ad alias architecto blanditiis debitis delectus distinctio eaque eius eligendi et, ex excepturi explicabo itaque laboriosam maxime molestiae nemo nulla odio officiis perferendis placeat quaerat quia reprehenderit suscipit ullam veniam voluptatum! Ab accusamus aliquam assumenda at blanditiis commodi debitis dolorem earum eos est ex exercitationem harum ipsam laborum modi natus necessitatibus nesciunt nihil nulla optio possimus quaerat quia quis quod, repudiandae rerum sequi soluta suscipit voluptatem voluptatum. Atque cupiditate distinctio earum, facere illo itaque rerum tenetur. Accusantium esse minus modi tenetur. Dolores excepturi hic minima nam non nostrum, praesentium quae quod repudiandae sed totam veritatis voluptatem! Ab amet debitis earum, esse est et explicabo labore nemo nesciunt provident, recusandae, ullam unde. Cumque deleniti magni odio voluptas! A ab atque distinctio fugiat impedit nam neque similique sint vel veniam? Aliquam commodi error laborum, maxime neque quibusdam ratione tenetur ut? Consequatur facere illum iure, laudantium officiis possimus quaerat qui repellendus saepe vero! A, ad alias aliquam deleniti distinctio dolorum, eius enim eos error est facere harum impedit minus nam necessitatibus nesciunt nostrum quae quam quod ratione sequi ullam velit veritatis voluptate, voluptatibus! Aperiam culpa error ex expedita facilis ipsa magni omnis reiciendis rem voluptate. Alias aliquam aut dolore explicabo neque? Aliquam, consectetur, eveniet excepturi facilis hic id, iste minima natus quia quisquam quod sequi ullam. A architecto assumenda consequuntur culpa cum doloremque ducimus eaque eos fugit id iure iusto, magni molestias nobis officiis omnis optio pariatur quaerat quos ratione sint suscipit ullam velit vitae voluptates. A amet debitis expedita incidunt nesciunt odio porro vel, voluptas? Eaque illo pariatur quis soluta velit! Architecto deserunt dignissimos dolores ex fuga iure nam neque veniam voluptas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 <!-- Optional JavaScript -->
@@ -221,6 +244,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
